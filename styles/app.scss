@@ -1,0 +1,106 @@
+.frame {
+	border-style: inset;
+	border: 1px solid #40a0ff;
+	position: relative;
+}
+
+.sm-box {
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	border: 1px solid #40a0ff;
+}
+
+.sm-box-1 {
+	top: -15px;
+	left: -15px;
+}
+
+.sm-box-2 {
+	top: -15px;
+	right: -15px;
+}
+
+.sm-box-3 {
+	bottom: -15px;
+	right: -15px;
+}
+
+.sm-box-4 {
+	bottom: -15px;
+	left: -15px;
+}
+
+.sm-box-5 {
+	bottom: 50%;
+	left: -15px;
+}
+
+.sm-box-6 {
+	bottom: 50%;
+	right: -15px;
+}
+
+.sm-box-7 {
+	bottom: -15px;
+	left: 50%;
+}
+
+.sm-box-8 {
+	top: -15px;
+	left: 50%;
+}
+
+@media screen and (max-width: 500px) {
+	.sm-box-5,
+	.sm-box-6,
+	.sm-box-7,
+	.sm-box-8 {
+		display: none;
+	}
+
+	.frame {
+		border-radius: 10px;
+	}
+}
+
+.text-gradient_purple-blue {
+	background: linear-gradient(90deg, #4c73ff 0%, #73e0f8 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.gradient_blue-purple {
+	background: linear-gradient(90deg, #4ca5ff 0%, #b573f8 100%);
+}
+
+.text-gradient_blue {
+	background: linear-gradient(90deg, #4c73ff 2.34%, #389bff 100.78%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.gradient_purple {
+	background: linear-gradient(90deg, #854cff 0%, #b573f8 100%);
+}
+
+.text-gradient_blue-purple {
+	background: linear-gradient(90deg, #4ca5ff 0%, #b573f8 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+	display: none;
+}
+
+.no-scrollbar {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
