@@ -13,7 +13,6 @@ const Navbar = () => {
 						alt="JSM logo"
 					/>
 				</Link>
-
 				<Image
 					src="/hamburger-menu.svg"
 					width={30}
@@ -21,7 +20,6 @@ const Navbar = () => {
 					alt="Hamburger menu"
 					className="block md:hidden"
 				/>
-
 				<ul className="flex-center gap-x-3 max-md:hidden md:gap-x-10">
 					<li className="body-text text-gradient_blue-purple !font-bold">
 						<Link
