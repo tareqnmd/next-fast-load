@@ -29,10 +29,7 @@ const Home = async ({ resourcesPlaylist, resources, searchParams }: any) => {
 							resources.map((resource: any) => (
 								<ResourceCard
 									key={resource._id}
-									title={resource.title}
-									id={resource._id}
-									image={resource.image}
-									downloadNumber={resource.views}
+									resource={resource}
 								/>
 							))
 						) : (
@@ -52,10 +49,7 @@ const Home = async ({ resourcesPlaylist, resources, searchParams }: any) => {
 						{item.resources.map((resource: any) => (
 							<ResourceCard
 								key={resource._id}
-								title={resource.title}
-								id={resource._id}
-								image={resource.image}
-								downloadNumber={resource.views}
+								resource={resource}
 							/>
 						))}
 					</div>
